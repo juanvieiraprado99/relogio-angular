@@ -4,12 +4,12 @@
     <div class="source"></div>
 
     <span
-    *ngFor="let digit of digits" class="digit digit-{{digit}
-    }"
+      *ngFor="let digit of digits"
+      class="digit digit-{{digit}}"
       [ngStyle]="{'transform': 'rotate('+digit * 30 + 'deg)'}">
 
-      <b [ngStyle]="{'transform': 'rotate(-' + digit * 30 +'deg)
-      '}">{{digit}}</b>
+      <b
+        [ngStyle]="{'transform': 'rotate(-' + digit * 30 +'deg)'}">{{digit}}</b>
     </span>
 
     <div class="hand hour-hand" [ngStyle]="{'transform': 'rotate(' + hourHandPosition + 'deg)'}"></div>
